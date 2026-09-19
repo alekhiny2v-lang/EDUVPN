@@ -1,0 +1,21 @@
+# Gradle / Android Studio
+.gradle/
+build/
+app/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IDE
+.idea/
+*.iml
+.navigation/
+output.json
+
+# Kotlin / JVM verification harness output
+verification/build/
+
+# OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  EDUVPN runs over plain HTTP fallbacks because the VPN Gate API is served that
+  way, and Android blocks cleartext by default from API 28 onwards.
+
+  Rather than flipping the global `usesCleartextTraffic` switch, cleartext is
+  allowed for exactly the hosts the app needs and denied everywhere else, so a
+  compromised dependency cannot quietly downgrade some other request.
+-->
+<network-security-config>
+
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Official VPN Gate server-list endpoint. -->
+        <domain includeSubdomains="true">vpngate.net</domain>
+        <!-- VPN Gate's advertised relay mirrors, if you enable them in VpnGateApi. -->
+        <domain includeSubdomains="true">openvpn.jp</domain>
+    </domain-config>
+
+</network-security-config>

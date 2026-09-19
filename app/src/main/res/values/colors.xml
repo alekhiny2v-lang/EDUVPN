@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen_background">#FF0E1116</color>
+
+    <color name="text_primary">#FFF2F5F9</color>
+    <color name="text_secondary">#B3C6CFDA</color>
+    <color name="text_tertiary">#8098A4B3</color>
+
+    <color name="accent">#FF4FC3F7</color>
+
+    <!-- Button colours, applied from MainActivity via backgroundTintList. -->
+    <color name="button_idle">#FF2A3441</color>
+    <color name="button_busy">#FFB26A00</color>
+    <color name="button_connected">#FF1B8A4B</color>
+    <color name="button_error">#FFB3261E</color>
+    <color name="button_label">#FFFFFFFF</color>
+    <color name="button_ripple">#33FFFFFF</color>
+</resources>

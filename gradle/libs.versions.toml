@@ -1,0 +1,83 @@
+#
+# Version catalogue for EDUVPN.
+#
+# Every AndroidX / OkHttp / Kotlin version below is the one ics-openvpn v0.7.65
+# (released 2026-09-05) builds with, taken from its own gradle/libs.versions.toml.
+# This is not just tidiness: when `:openvpn` is included in this build, the `libs`
+# accessor inside *its* build script resolves against *this* catalogue, so every
+# alias that file references has to exist here or Gradle fails during
+# configuration with "Unresolved reference".
+#
+# Do not "fix" the AGP version from a Maven Central search: the Android Gradle
+# Plugin is published to Google's Maven repository (google()), not Central, so
+# Central's index for com.android.tools.build:gradle is years out of date.
+#
+# kotlinx-coroutines is not used by ics-openvpn, so its version was taken
+# separately - 1.10.2 is the newest on Maven Central as of 2026-09-19.
+#
+[versions]
+agp = "9.4.0"
+kotlin = "2.4.10"
+kotlinx-coroutines = "1.10.2"
+
+androidx-annotation = "1.10.0"
+androidx-core-ktx = "1.19.0"
+androidx-appcompat = "1.8.0"
+androidx-activity = "1.13.0"
+androidx-fragment-ktx = "1.9.0"
+androidx-constraintlayout = "2.2.2"
+androidx-lifecycle = "2.11.0"
+androidx-cardview = "1.0.0"
+androidx-recyclerview = "1.4.0"
+androidx-viewpager2 = "1.1.0"
+androidx-preference-ktx = "1.2.1"
+androidx-security-crypto = "1.1.0"
+material = "1.14.0"
+mpandroidchart = "3.1.0"
+
+okhttp = "5.5.0"
+
+junit = "4.13.2"
+androidx-test-core = "1.7.0"
+mockito-core = "5.23.0"
+robolectric = "4.16.1"
+jsonorg = "20260814"
+
+[libraries]
+# --- used by this app ---
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidx-activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+
+# --- required only because the vendored :openvpn build script names them ---
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidx-annotation" }
+android-view-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidx-activity" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "androidx-cardview" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidx-fragment-ktx" }
+androidx-preference-ktx = { group = "androidx.preference", name = "preference-ktx", version.ref = "androidx-preference-ktx" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "androidx-recyclerview" }
+androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "androidx-security-crypto" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "androidx-viewpager2" }
+kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+square-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+
+# --- tests ---
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidx-test-core" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito-core" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+json = { group = "org.json", name = "json", version.ref = "jsonorg" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">12dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+    <dimen name="spacing_xl">40dp</dimen>
+
+    <!-- The round button: radius must stay exactly half of the size. -->
+    <dimen name="power_button_size">200dp</dimen>
+    <dimen name="power_button_radius">100dp</dimen>
+    <dimen name="power_button_elevation">8dp</dimen>
+    <dimen name="power_icon_size">32dp</dimen>
+
+    <dimen name="progress_size">28dp</dimen>
+    <dimen name="progress_thickness">3dp</dimen>
+</resources>
