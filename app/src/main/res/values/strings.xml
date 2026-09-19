@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EDUVPN</string>
+    <string name="app_title">EDUVPN</string>
+    <string name="app_subtitle">One tap. Fastest relay. No configuration.</string>
+
+    <!-- Button labels -->
+    <string name="action_connect">Connect</string>
+    <string name="action_connecting">Connecting</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_fetching">Working…</string>
+
+    <!-- Status line -->
+    <string name="status_idle">Idle</string>
+
+    <string name="legal_note">
+        Relays are volunteer-run VPN Gate servers. They log traffic and offer no
+        privacy guarantee — never use them for anything sensitive.
+    </string>
+</resources>

@@ -1,0 +1,12 @@
+*vpn_servers
+#HostName,IP,Score,Ping,Speed,CountryLong,CountryShort,NumVpnSessions,Uptime,TotalUsers,TotalTraffic,LogType,Operator,Message,OpenVPN_ConfigData_Base64
+good-quoted,10.0.0.1,5000,12,1000000,Japan,JP,3,1000,50,5000,2weeks,"Daiyuu Nobori, Japan",,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjEgNDQzDQpjbGllbnQNCmRldiB0dW4NCjxjYT4NCkNBQ0FDQQ0KPC9jYT4NCg==
+dead-ping-zero,10.0.0.2,5000,0,1000000,Japan,JP,3,1000,50,5000,2weeks,op,,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjIgNDQzDQpjbGllbnQNCjxjYT4NCkNBQ0FDQQ0KPC9jYT4NCg==
+no-config,10.0.0.3,5000,20,1000000,Japan,JP,3,1000,50,5000,2weeks,op,,
+truncated,10.0.0.4,5000,30,1000000,Japan
+bad-numbers,10.0.0.5,not-a-score,NaN,fast,Korea,KR,x,y,z,w,2weeks,op,,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjUgNDQzDQpjbGllbnQNCjxjYT4NCkNBQ0FDQQ0KPC9jYT4NCg==
+good-slow,10.0.0.6,9000,95,2000000,Korea Republic of,KR,7,1000,50,5000,2weeks,op,,ZGV2IHR1bg0KcHJvdG8gdWRwDQpyZW1vdGUgMTAuMC4wLjYgMTE5NA0KY2xpZW50DQo8Y2E+DQpDQUNBQ0ENCjwvY2E+DQo=
+good-escapes,10.0.0.7,7000,25,3000000,Japan,JP,1,1000,50,5000,2weeks,"he said ""hi"", ok",,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjcgNDQzDQpjbGllbnQNCjxjYT4NCkNBQ0FDQQ0KPC9jYT4NCg==
+good-noca,10.0.0.8,7000,30,3000000,Japan,JP,1,1000,50,5000,2weeks,op,,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjggNDQzDQpjbGllbnQNCg==
+hostile,10.0.0.9,8000,5,4000000,Japan,JP,1,1000,50,5000,2weeks,op,,ZGV2IHR1bg0KcHJvdG8gdGNwDQpyZW1vdGUgMTAuMC4wLjkgNDQzDQpjbGllbnQNCnVwIC90bXAvZXZpbC5zaA0Kc2NyaXB0LXNlY3VyaXR5IDMNCmF1dGgtdXNlci1wYXNzDQptYW5hZ2VtZW50IDEyNy4wLjAuMSA5OTk5DQo8Y2E+DQpDQUNBQ0ENCjwvY2E+DQo=
+*

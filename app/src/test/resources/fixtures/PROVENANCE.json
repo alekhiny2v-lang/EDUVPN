@@ -1,0 +1,15 @@
+{
+  "source_snapshot_sha256": "10c8448603b8e58966d7306ebda4f3b6c73997b90b96c1130aa0cb98d087616d",
+  "source_snapshot": "/tmp/vgm/data/vpngate.csv",
+  "real_sample": {
+    "file": "vpngate_real_sample.csv",
+    "bytes": 67633,
+    "rows": 5,
+    "sha256": "f956e7610fc9dfa378d5ff1d79b55c1159ee54874483e06bd06c43a20d29f6c7"
+  },
+  "edge_cases": {
+    "file": "edge_cases.csv",
+    "bytes": 1604,
+    "sha256": "c47ab9edce6f77f4cb3d68567157fa7acd72f90ffc25c67c8c77a548e92863e9"
+  }
+}
